@@ -12,3 +12,12 @@ fi
 
 # Customize to your needs...
 
+# Add homebrew to completion path
+fpath=("/usr/local/bin/" $fpath)
+
+# MB of memory for CoreOSX VM
+export VM_MEMORY=2048
+
+eval `coreosx env`
+
+alias be="bundle exec"
